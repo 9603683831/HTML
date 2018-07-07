@@ -1,0 +1,290 @@
+/*----main header----*/
+body{
+    font-family: Arial,sans-serif;
+    margin: 0;
+}
+
+.main-header{
+    background-image: url("images/technology.JPG");
+    background-size: cover;
+    padding: 15px;
+    color: white;
+    text-align: right;
+}
+
+/*---Main Navigation---*/
+.main-nav{
+    background-color: #232518;
+    overflow: hidden;
+}
+.main-nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.main-nav ul li{
+    float: left;
+}
+.main-nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 12px 25px;
+    display: inline-block;
+}
+.main-nav ul li a:hover{
+    background-color: #7D8A70;
+}
+.main-nav ul li a.active{
+    background: #6CC95E;
+}
+.fa{
+    color: lightgrey;
+}
+
+/*---Flash News---*/
+.flash-news{
+    background-color: #232518;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 5px;
+    animation-name: flash-news;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes flash-news{
+    0%,50%,100%{
+        background-color: #7D8A70;
+    }
+    25%,75%{
+        background-color: #232518;
+    }
+}
+.flash-news p{
+    margin: 0;
+    animation-name: paragraph;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes paragraph {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+/*---Home News Section---*/
+.home-news-section{
+    width: 1100px;
+    height: auto;
+    margin-left: 150px;
+}
+.home-news-artical{
+    border: 2px solid gray;
+    width: 330px;
+    height: 550px;
+    margin: 5px;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    transition: all 1s;
+}
+.home-news-artical:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 15px #232518;
+    width: 350px;
+}
+.home-news-artical img{
+    width: 100%;
+
+}
+.home-news-text{
+    padding: 10%;
+}
+/*---Break---*/
+.break{
+    clear: both;
+}
+/*--Main Footer--*/
+.main-footer{
+    background-color: #232518;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.main-footer small, .main-footer a, .fa-user-circle-o{
+    color: orange;
+}
+
+/*-------news Section--------*/
+.news-section{
+    width: 1100px;
+    height: auto;
+    margin: auto;
+}
+.news-article{
+
+}
+.news-article h2 {
+    text-align: center;
+    background-color: #0c5460;
+    padding: 5px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.zoom{
+    width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+.zoom img{
+    max-width: 100%;
+    max-height: 100%;
+    transition: all 1s;
+    border-radius: 20px;
+    opacity: 0.8; /*For dark side*/
+}
+.zoom:hover img{
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+    opacity: 1.0;  /* For Clear image*/
+}
+.news-article p{
+    font-size: 20px;
+    text-align: center;
+}
+
+/*gallery section*/
+.gallery-section{
+    margin-left: 25px;
+}
+.gallery-section article{
+    width: 300px;
+    float: left;
+    margin: 5px;
+    border: 2px solid #232518;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+.gallery-section article img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+.gallery-section article:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 15px #232518;
+}
+/*---About Section*/
+.about-section{
+    width: 1100px;
+    height: auto;
+    margin: auto;
+}
+.about-section h1{
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #232518;
+}
+.about-article p{
+    font-size: 18px;
+}
+.clint-images img{
+    width: 270px;
+    height: 150px;
+    border-radius: 20px;
+}
+/*---Contact-sectionb----*/
+.contact-section{
+    width: 1100px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+.contact-section h1{
+   font-size: 28px;
+    color: #232518;
+    margin-bottom: 5px;
+}
+.contact-section p{
+    margin: 0;
+    font-size: 20px;
+}
+input[type=text],input[type=email]{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 5px;
+    text-align: center;
+    font-size: 17px;
+    border: 2px solid #23251B;
+}
+input[type=text]:focus,input[type=email]:focus,textarea:focus{
+    outline: none;
+    background-color: lightblue;
+}
+textarea {
+    width: 300px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid #23251B;
+    margin: 5px;
+}
+input[type=submit]{
+    background-color: #23251B;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px 128px;
+    margin: 5px;
+    color: #ffff;
+}
+input[type=submit]:hover{
+    cursor: pointer;
+    background-color: #7DBA70;
+    box-shadow: 5px 5px 15px #232518;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
